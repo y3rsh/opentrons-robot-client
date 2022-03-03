@@ -1,0 +1,53 @@
+@hostname = localhost
+@port = 31950
+@host = http://{{hostname}}:{{port}}
+@contentType = application/json
+@createdAt = {{$datetime iso8601}}
+@modifiedBy = {{$processEnv USERNAME}}
+@header = opentrons-version: *
+@runId = 7084d8c8-f3f0-4cf8-a21d-0c400e6fe6cf
+@binary = true
+
+GET {{host}}/health
+opentrons-version: *
+
+###
+POST {{host}}/robot/lights
+opentrons-version: *
+
+{"on": "{{binary}}" }
+
+
+###
+GET {{host}}/runs
+opentrons-version: *
+Content-Type: {{contentType}}
+
+###
+# Create a run
+POST {{host}}/runs
+opentrons-version: *
+Content-Type: application/json
+
+{
+  "data": {}
+}
+
+###
+GET {{host}}/runs/{{runId}}/commands
+opentrons-version: *
+
+###
+
+POST {{host}}/runs/{{runId}}/commands
+opentrons-version: *
+Content-Type: application/json
+
+{
+    "data": {
+        "commandType": "setRailLights",
+        "params": {
+            "on": true
+        }
+    }
+}

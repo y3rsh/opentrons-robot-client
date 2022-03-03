@@ -4,9 +4,12 @@
         "dockerfile": "Dockerfile",
         "context": "..",
         "args": {
-            "VARIANT": "3.10-bullseye",
+            "VARIANT": "3.7-bullseye",
             "NODE_VERSION": "16.13.1"
         }
+    },
+    "containerEnv": {
+        "PIPENV_VENV_IN_PROJECT": "true",
     },
     "mounts": [
         "source=${localEnv:HOME}/.aws,target=/home/vscode/.aws,type=bind",
@@ -35,10 +38,13 @@
         "dbaeumer.vscode-eslint",
         "esbenp.prettier-vscode",
         "editorconfig.editorconfig",
-        "streetsidesoftware.code-spell-checker"
+        "streetsidesoftware.code-spell-checker",
+        "humao.rest-client",
+        "bpruitt-goddard.mermaid-markdown-syntax-highlighting",
+        "bierner.markdown-mermaid",
+        "redhat.vscode-yaml"
     ],
-
-    "postCreateCommand": "pip install --user -U pre-commit && pre-commit install-hooks",
+    "postCreateCommand": "pip install --user -U pre-commit pipenv && pre-commit install-hooks",
     "remoteUser": "vscode",
     "features": {
         "common": {

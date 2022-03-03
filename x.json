@@ -1,0 +1,6 @@
+{
+    "_pip_model": "p300_single_gen2",
+    "_pip_mount": "left",
+    "_dp_type": "nest_96_wellplate_100ul_pcr_full_skirt",
+    "_dye_type": "nest_12_reservoir_15ml"
+}
