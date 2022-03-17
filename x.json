@@ -1,6 +1,382 @@
 {
-    "_pip_model": "p300_single_gen2",
-    "_pip_mount": "left",
-    "_dp_type": "nest_96_wellplate_100ul_pcr_full_skirt",
-    "_dye_type": "nest_12_reservoir_15ml"
+    "errors": [
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "unexpected value; permitted: 'aspirate'",
+            "source": { "pointer": "/data/commandType" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "field required",
+            "source": { "pointer": "/data/params/pipetteId" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "field required",
+            "source": { "pointer": "/data/params/labwareId" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "field required",
+            "source": { "pointer": "/data/params/wellName" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "field required",
+            "source": { "pointer": "/data/params/volume" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "unexpected value; permitted: 'dispense'",
+            "source": { "pointer": "/data/commandType" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "field required",
+            "source": { "pointer": "/data/params/pipetteId" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "field required",
+            "source": { "pointer": "/data/params/labwareId" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "field required",
+            "source": { "pointer": "/data/params/wellName" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "field required",
+            "source": { "pointer": "/data/params/volume" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "unexpected value; permitted: 'dropTip'",
+            "source": { "pointer": "/data/commandType" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "field required",
+            "source": { "pointer": "/data/params/pipetteId" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "field required",
+            "source": { "pointer": "/data/params/labwareId" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "field required",
+            "source": { "pointer": "/data/params/wellName" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "unexpected value; permitted: 'home'",
+            "source": { "pointer": "/data/commandType" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "unexpected value; permitted: 'loadLabware'",
+            "source": { "pointer": "/data/commandType" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "field required",
+            "source": { "pointer": "/data/params/location" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "field required",
+            "source": { "pointer": "/data/params/loadName" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "field required",
+            "source": { "pointer": "/data/params/namespace" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "field required",
+            "source": { "pointer": "/data/params/version" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "unexpected value; permitted: 'loadModule'",
+            "source": { "pointer": "/data/commandType" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "field required",
+            "source": { "pointer": "/data/params/model" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "field required",
+            "source": { "pointer": "/data/params/location" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "unexpected value; permitted: 'loadPipette'",
+            "source": { "pointer": "/data/commandType" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "field required",
+            "source": { "pointer": "/data/params/pipetteName" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "field required",
+            "source": { "pointer": "/data/params/mount" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "unexpected value; permitted: 'moveRelative'",
+            "source": { "pointer": "/data/commandType" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "field required",
+            "source": { "pointer": "/data/params/pipetteId" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "field required",
+            "source": { "pointer": "/data/params/axis" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "field required",
+            "source": { "pointer": "/data/params/distance" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "unexpected value; permitted: 'moveToWell'",
+            "source": { "pointer": "/data/commandType" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "field required",
+            "source": { "pointer": "/data/params/pipetteId" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "field required",
+            "source": { "pointer": "/data/params/labwareId" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "field required",
+            "source": { "pointer": "/data/params/wellName" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "unexpected value; permitted: 'pause'",
+            "source": { "pointer": "/data/commandType" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "unexpected value; permitted: 'pickUpTip'",
+            "source": { "pointer": "/data/commandType" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "field required",
+            "source": { "pointer": "/data/params/pipetteId" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "field required",
+            "source": { "pointer": "/data/params/labwareId" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "field required",
+            "source": { "pointer": "/data/params/wellName" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "unexpected value; permitted: 'savePosition'",
+            "source": { "pointer": "/data/commandType" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "field required",
+            "source": { "pointer": "/data/params/pipetteId" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "unexpected value; permitted: 'heaterShakerModule/awaitTemperature'",
+            "source": { "pointer": "/data/commandType" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "field required",
+            "source": { "pointer": "/data/params/moduleId" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "unexpected value; permitted: 'heaterShakerModule/startSetTargetTemperature'",
+            "source": { "pointer": "/data/commandType" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "field required",
+            "source": { "pointer": "/data/params/moduleId" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "field required",
+            "source": { "pointer": "/data/params/temperature" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "unexpected value; permitted: 'heaterShakerModule/deactivateHeater'",
+            "source": { "pointer": "/data/commandType" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "field required",
+            "source": { "pointer": "/data/params/moduleId" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "unexpected value; permitted: 'heaterShakerModule/setTargetShakeSpeed'",
+            "source": { "pointer": "/data/commandType" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "field required",
+            "source": { "pointer": "/data/params/moduleId" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "field required",
+            "source": { "pointer": "/data/params/rpm" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "unexpected value; permitted: 'heaterShakerModule/stopShake'",
+            "source": { "pointer": "/data/commandType" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "field required",
+            "source": { "pointer": "/data/params/moduleId" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "unexpected value; permitted: 'heaterShakerModule/openLatch'",
+            "source": { "pointer": "/data/commandType" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "field required",
+            "source": { "pointer": "/data/params/moduleId" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "unexpected value; permitted: 'heaterShakerModule/closeLatch'",
+            "source": { "pointer": "/data/commandType" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "field required",
+            "source": { "pointer": "/data/params/moduleId" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "unexpected value; permitted: 'magneticModule/disengageMagnet'",
+            "source": { "pointer": "/data/commandType" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "field required",
+            "source": { "pointer": "/data/params/moduleId" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "unexpected value; permitted: 'magneticModule/engageMagnet'",
+            "source": { "pointer": "/data/commandType" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "field required",
+            "source": { "pointer": "/data/params/moduleId" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "field required",
+            "source": { "pointer": "/data/params/engageHeight" }
+        },
+        {
+            "id": "InvalidRequest",
+            "title": "Invalid Request",
+            "detail": "field required",
+            "source": { "pointer": "/data/params/on" }
+        }
+    ]
 }

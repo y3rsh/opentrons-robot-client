@@ -9,6 +9,7 @@ rich = "*"
 pytest = "*"
 requests = "*"
 pytest-xdist = "*"
+ipython = "*"
 
 [dev-packages]
 

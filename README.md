@@ -10,3 +10,6 @@ HOME user variable to point at home directory.
 
 On Windows.
 https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse#install-openssh-using-powershell
+
+
+pipenv run opentrons_simulate many_pause.py

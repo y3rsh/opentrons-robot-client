@@ -1,11 +1,11 @@
-@hostname = localhost
+@hostname = host.docker.internal
 @port = 31950
 @host = http://{{hostname}}:{{port}}
 @contentType = application/json
 @createdAt = {{$datetime iso8601}}
 @modifiedBy = {{$processEnv USERNAME}}
 @header = opentrons-version: *
-@runId = 7084d8c8-f3f0-4cf8-a21d-0c400e6fe6cf
+@runId = fd0983a4-5d5c-4f88-9925-7ea5422140ee
 @binary = true
 
 GET {{host}}/health
@@ -48,6 +48,28 @@ Content-Type: application/json
         "commandType": "setRailLights",
         "params": {
             "on": true
+        }
+    }
+}
+
+###
+GET {{host}}/modules
+opentrons-version: *
+
+###
+
+POST {{host}}/runs/{{runId}}/commands
+opentrons-version: *
+Content-Type: application/json
+
+{
+    "data": {
+        "commandType": "loadModule",
+        "params": {
+            "model": "magneticModuleV1",
+            "location": {
+                "slotName": "3"
+            }
         }
     }
 }
